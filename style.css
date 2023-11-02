@@ -1,0 +1,77 @@
+/* Variables */
+
+/* Mixins */
+body {
+  background: #ffa600;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  height: 100%;
+  margin: 0; /* Reset margin to remove default margin */
+  padding: 0; /* Reset padding to remove default padding */
+}
+
+.wrapper {
+  width: 800px;
+  margin: 30px auto;
+  color: #fff;
+  text-align: center;
+  padding: 20px; /* Add some padding for better readability */
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; /* Use a slightly heavier font weight for better readability */
+  text-transform: uppercase;
+}
+
+#seconds,
+#tens {
+  font-size: 2em;
+  font-weight: bold; /* Make the font weight bold for better visibility */
+}
+
+button {
+  border-radius: 5px; /* Use standard border-radius property */
+  background: #ffa600;
+  color: #fff;
+  border: none; /* Remove border to make it cleaner */
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 12px 20px; /* Adjust padding for better button size */
+  width: 180px;
+  margin: 10px;
+  outline: none;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+button:hover {
+  background: #fff;
+  color: #ffa600;
+}
+
+/* Additional styling for better contrast and readability */
+body {
+  line-height: 1.6; /* Increase line height for better readability */
+}
+
+.wrapper {
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Add a semi-transparent background to the wrapper for better contrast with text */
+}
+
+/* Media Query for responsive design */
+@media (max-width: 600px) {
+  .wrapper {
+    width: 90%; /* Make the wrapper responsive for smaller screens */
+  }
+  button {
+    width: 100%; /* Make the button full width on smaller screens */
+  }
+}
